@@ -26,10 +26,10 @@ func GetMemoryUsage(pid int) (uint64, error) {
 // It will also block the execution for 'sampleTime' duration.
 func GetAverageProcessorUsage(pid int, sampleTime time.Duration) float64 {
   ctx, cancel := context.WithCancel(context.Background())
+  defer cancel()
   infoChannel := processinfo.NewSampler(ctx, pid, sampleTime)
   <-infoChannel
   info := <-infoChannel
-  cancel()
   return info.CPU
 }
 
