@@ -15,7 +15,7 @@ func getSystemTime() (time.Duration, error) {
 	return kernel + user + idle, nil
 }
 
-func getProcessInfo(pid int64) (*ProcessInfo, error) {
+func getProcessInfo(pid int) (*ProcessInfo, error) {
 	stats, err := getWinProcessStats(pid)
 	if err != nil {
 		return nil, err
