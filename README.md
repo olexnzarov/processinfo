@@ -1,4 +1,4 @@
-# processinfo
+# processinfo [![GoDoc](https://pkg.go.dev/badge/github.com/olexnzarov/processinfo)](https://pkg.go.dev/github.com/olexnzarov/processinfo) [![Github release](https://img.shields.io/github/release/olexnzarov/processinfo.svg)](https://github.com/olexnzarov/processinfo/releases) [![Test status](https://github.com/olexnzarov/processinfo/actions/workflows/tests.yml/badge.svg)](https://github.com/olexnzarov/processinfo/actions/workflows/tests.yml)
 
 processinfo is a package that lets you get process stats, such as overall CPU utilization and memory usage.
 
